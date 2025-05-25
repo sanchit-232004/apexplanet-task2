@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Form and To-Do List</title>
+  <link rel="stylesheet" href="apextask2.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Website APEXPLANET internship</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form id="myForm" action="/submit_form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <div id="name-error" class="error-message"></div>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <div id="email-error" class="error-message"></div>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
+        <div id="message-error" class="error-message"></div>
+
+        <input type="submit" value="Submit">
+      </form>
+      <div class="todo-list">
+        <div class="todo-header">
+          <h2>To-Do List</h2>
+          <input type="text" id="taskInput" placeholder="Enter new task...">
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+        <div class="task-list" id="taskList">
+          <ul>
+            <li><span>Learn HTML</span><button>Remove</button></li>
+            <li><span>Learn CSS</span><button>Remove</button></li>
+            <li><span>Learn JavaScript</span><button>Remove</button></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 My Website</p>
+    </footer>
+  </div>
+  <script src="aptask2.js"></script>
+  
+</body>
+</html>
